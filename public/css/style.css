@@ -1,0 +1,144 @@
+body {
+	font-family: "Plus Jakarta Sans", sans-serif !important;
+	font-weight: 500 !important;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	--color: #1b5091;
+}
+
+.container {
+	flex: 1;
+}
+/* Navbar */
+.navbar {
+	height: 5rem;
+	background-color: white;
+}
+
+.fa-compass {
+	color: #1b5091;
+	font-size: 2rem;
+	margin-left: 0.5rem;
+}
+
+.nav-link {
+	color: #1a1818 !important;
+}
+
+.nav-link:hover {
+	color: #888787 !important;
+}
+
+/* Footer */
+.f-info {
+	margin-bottom: 0%;
+}
+
+.f-info-links a {
+	text-decoration: none;
+	color: #222222;
+}
+
+.f-info-links a:hover {
+	text-decoration: underline;
+}
+
+.f-info-socials,
+.f-info-links,
+.f-info-brand {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.f-info-socials i {
+	font-size: 1.2rem;
+	margin-right: 1rem;
+	transition: transform 0.15s;
+}
+
+.f-info-socials i:hover {
+	transform: translateY(-5px);
+}
+
+.f-info {
+	display: flex;
+	height: 8rem;
+	background-color: #ebebeb;
+	flex-wrap: wrap;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Cards */
+.listing-card {
+	border: none !important;
+	margin-bottom: 2rem !important;
+}
+
+.card-img-top {
+	border-radius: 1rem !important;
+	width: 100% !important;
+	object-fit: cover !important;
+}
+
+.card-body {
+	padding: 0 !important;
+	font-weight: 450 !important;
+}
+
+.card-body p {
+	font-weight: 450 !important;
+}
+
+.listing-link {
+	text-decoration: none;
+}
+
+/* Card Effect Overlay */
+
+.card-img-overlay {
+	opacity: 0;
+}
+
+.card-img-overlay:hover {
+	opacity: 0.2;
+	background-color: white;
+}
+
+/* New Page */
+.add-btn {
+	background-color: var(--color) !important;
+	border: none !important;
+}
+
+/* Edit Page */
+
+.edit-btn {
+	background-color: var(--color) !important;
+	border: none !important;
+}
+
+/* Show Page */
+
+.show-img {
+	height: 30vh;
+}
+
+.show-card {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.btns {
+	display: flex;
+}
+
+/* Rough Work */
+/* [class*="col"]{
+	background-color: aqua !important;
+	border: 2px solid white !important;
+} */
