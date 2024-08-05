@@ -83,7 +83,7 @@ app.use("/listings/:id/reviews", reviewRoute);
 app.use("/", userRoute);
 
 app.get("/", (req, res) => {
-	res.render("./listings");
+	res.redirect("/listings");
 });
 
 // app.get("/", async (req, res) => {
