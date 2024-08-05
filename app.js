@@ -71,8 +71,6 @@ app.use((req, res, next) => {
 	next();
 });
 
-
-
 app.set("views engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 app.use(express.urlencoded({ extended: true }));
@@ -85,7 +83,7 @@ app.use("/listings/:id/reviews", reviewRoute);
 app.use("/", userRoute);
 
 app.get("/", (req, res) => {
-	res.send("Hi, this is Home route!");
+	res.render("./listings");
 });
 
 // app.get("/", async (req, res) => {
