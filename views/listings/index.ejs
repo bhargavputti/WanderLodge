@@ -9,6 +9,7 @@
 			display: flex;
 			flex-wrap: wrap;
 			align-items: center;
+			justify-content: space-evenly;
 		}
 		.filter {
 			text-align: center;
@@ -24,7 +25,7 @@
 		.filter p {
 			font-size: 0.85rem;
 		}
-		.tax-info{
+		.tax-info {
 			display: none;
 		}
 		.tax-toggle {
@@ -37,9 +38,10 @@
 			font-weight: 400;
 			cursor: pointer;
 		}
-	.form-check-input, .form-check-label{
-		cursor: pointer;
-	}
+		.form-check-input,
+		.form-check-label {
+			cursor: pointer;
+		}
 	</style>
 	<div id="filters">
 		<div class="filter">
@@ -144,11 +146,10 @@
 	let taxSwitch = document.getElementById("flexSwitchCheckDefault");
 	taxSwitch.addEventListener("click", () => {
 		let taxInfo = document.getElementsByClassName("tax-info");
-		for(info of taxInfo){
-			if(info.style.display != "inline"){
+		for (info of taxInfo) {
+			if (info.style.display != "inline") {
 				info.style.display = "inline";
-			}
-			else{
+			} else {
 				info.style.display = "none";
 			}
 		}
